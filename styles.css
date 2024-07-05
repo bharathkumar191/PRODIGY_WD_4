@@ -1,0 +1,246 @@
+/* CSS file: styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
+body {
+    font-family: "Playwrite NG Modern", cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 96%);
+    color: #333;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+nav {
+    background: #5a85c1;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: #b37a00;
+}
+
+#home {
+    text-align: left;
+    padding: 100px 0;
+    background: url('background1.jpg') no-repeat center center/cover, #333;
+    color: #28293d;
+}
+
+#home h1 {
+    text-align: left;
+}
+
+#home img {
+    border-radius: 10%;
+    width: 250px;
+    height: auto;
+    display: block;
+    margin-left: 0;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.about-box {
+    background: #fff;
+    padding: 30px 20px;
+    margin-top: 20px;
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-section {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    width: 90%;
+}
+
+.about-container{
+    width: 80%;
+
+}
+
+.about-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 300px;
+    text-align: left;
+}
+
+.project-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.project h3 {
+    margin: 10px;
+    color: #007BFF;
+}
+
+.project p {
+    margin: 10px;
+    color: #666;
+}
+
+.project a {
+    display: inline-block;
+    margin: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.project a:hover {
+    color: #0056b3;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#skills li {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#skills li:hover {
+    background: #ac4a29;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact form input, #contact form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 60%;
+    max-width: 500px;
+    border: 1px solid #14b948;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact form button:hover {
+    background: #c3821a;
+}
+
+.social-media {
+    text-align: left ;
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin-right: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-media a:hover {
+    color: #00b336;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
